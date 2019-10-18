@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Reflection;
@@ -31,6 +32,8 @@ namespace UnderMine
 
                 // Todo: Determine run order priority between mods and/or classes
             }
+
+           
         }
 
         public virtual void OnMainMenuOpen()
@@ -47,6 +50,18 @@ namespace UnderMine
             {
                 target.OnPlayerTick(player);
             }
+        }
+
+        public List<(string, Rect)> GetGUIStrings()
+        {
+            List<(string, Rect)> DrawableStrings = new List<(string, Rect)>();
+            foreach(var target in hooks)
+            {
+                var result = target.GetDrawables();
+                if (result!=null) { target.GetDrawables().ForEach(i => DrawableStrings.Add(i)); }
+            }
+
+            return DrawableStrings;
         }
     }
 }
