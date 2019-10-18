@@ -26,6 +26,22 @@ you can open a new issue and document the hook and where you would like it, and 
 At the moment we have to patch the UnderMine.dll directly by opening and editing it and injecting references by hand.
 However -- A patcher known as Xdelta with binary diff files on Windows works great.
 
+Instructions to use the diff file are as follows:
+
+Put UnderMine.dll into the Patching folder, and then run the .bat file called PatchUnderMine.bat, the patch file is provided for you
+and this will generate a new file called UnderMine_Patched.dll
+To make a diff backup of the UnderMine_Patched file run the .bat file called GenerateUnderMinePatch.bat
+
+The folder known as patching will be included, but you will have to provide your own UnderMine.dll
+
+Full Use Instructions:
+Once you've built everything, Copy all the dll's you built except your SpeedMod.dll into the Managed Folder of
+the UnderMine root directory it should be something like: 'UnderMine\UnderMine_Data\Managed'.
+
+DONT FORGET, if your mod/s don't load it means you either didn't patch UnderMine.dll properly, replace UnderMine.dll properly, or rename UnderMine_Patched.dll to UnderMine.dll
+or it could mean that the patcher didn't work, you'll have to try again.
+If a mods folder was not generated in your 'UnderMine\UnderMine_Data' directory, try restarting the game again.
+
 Remember to follow these instructions carefully, and always keep track of what you are naming your files/folders.
 
 Happy Modding.

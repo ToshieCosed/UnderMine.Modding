@@ -1,0 +1,2 @@
+Creating a patch: xdelta -e -s old_file new_file delta_file
+Applying a patch: xdelta -d -s old_file delta_file decoded_new_file
