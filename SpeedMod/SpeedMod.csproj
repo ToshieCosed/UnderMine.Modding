@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\UnderMine.Modding\UnderMine.Modding.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="UnderMine">
+      <HintPath>D:\SteamLibrary\steamapps\common\UnderMine\UnderMine_Data\Managed\UnderMine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine">
+      <HintPath>..\..\..\..\..\..\Program Files\Unity\Editor\Data\Managed\UnityEngine.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
