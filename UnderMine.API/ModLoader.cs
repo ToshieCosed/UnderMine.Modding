@@ -33,6 +33,11 @@ namespace UnderMine
                 // Todo: Determine run order priority between mods and/or classes
             }
 
+            foreach(var target in hooks)
+            {
+                target.OnModLoaded();
+            }
+
            
         }
 

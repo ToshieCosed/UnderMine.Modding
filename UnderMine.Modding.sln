@@ -9,7 +9,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnderMine.API", "UnderMine.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SpeedMod", "SpeedMod\SpeedMod.csproj", "{B2A2463E-AA61-4E50-A7FC-2BC421D74D4C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GUIMod", "GUIMod\GUIMod.csproj", "{343908A9-EF42-4078-B675-3DDB970A52DB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GUIMod", "GUIMod\GUIMod.csproj", "{343908A9-EF42-4078-B675-3DDB970A52DB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrintOutTestMod", "PrintOutTestMod\PrintOutTestMod.csproj", "{A74C7CF3-CBEF-4591-B279-6BD89DFBA456}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{343908A9-EF42-4078-B675-3DDB970A52DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{343908A9-EF42-4078-B675-3DDB970A52DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{343908A9-EF42-4078-B675-3DDB970A52DB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A74C7CF3-CBEF-4591-B279-6BD89DFBA456}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A74C7CF3-CBEF-4591-B279-6BD89DFBA456}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A74C7CF3-CBEF-4591-B279-6BD89DFBA456}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A74C7CF3-CBEF-4591-B279-6BD89DFBA456}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
